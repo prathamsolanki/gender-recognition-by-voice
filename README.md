@@ -1,8 +1,8 @@
 # Gender Recognition by Voice and Speech Analysis
 
-Source: [Kaggle Datasets: Gender Recognition by Voice](https://www.kaggle.com/primaryobjects/voicegender)
+Dataset Source: [Kaggle Datasets: Gender Recognition by Voice](https://www.kaggle.com/primaryobjects/voicegender)
 
-This dataset is distributed by [Kory Becker](https://github.com/primaryobjects) on [Kaggle](https://www.kaggle.com/) under [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
+This dataset is released by [Kory Becker](https://github.com/primaryobjects) on [Kaggle](https://www.kaggle.com/) under [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
 
 This database was created to identify a voice as male or female, based upon acoustic properties of the voice and speech. The dataset consists of 3,168 recorded voice samples, collected from male and female speakers. The voice samples are pre-processed by acoustic analysis in R using the seewave and tuneR packages, with an analyzed frequency range of 0hz-280hz (human vocal range).
 
@@ -48,3 +48,8 @@ The best model achieves 99% accuracy on the test set. According to a CART model,
 * Can we identify falsetto from regular voices? (separate data-set likely needed for this)
 * Are there other interesting features in the data?
 
+# References
+
+* [The Harvard-Haskins Database of Regularly-Timed Speech](http://www.nsi.edu/~ani/download.html)
+* [VoxForge Speech Corpus, Home](http://www.repository.voxforge1.org/downloads/SpeechCorpus/Trunk/Audio/Main/8kHz_16bit/)
+* [Festvox CMU_ARCTIC Speech Database at Carnegie Mellon University](http://festvox.org/cmu_arctic/)
