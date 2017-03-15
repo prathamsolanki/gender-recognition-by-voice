@@ -10,46 +10,25 @@ This database was created to identify a voice as male or female, based upon acou
 
 ## The following acoustic properties of each voice are measured and included within the CSV:
 
-* meanfreq: mean frequency (in kHz)
-* sd: standard deviation of frequency
-* median: median frequency (in kHz)
-* Q25: first quantile (in kHz)
-* Q75: third quantile (in kHz)
-* IQR: interquantile range (in kHz)
-* skew: skewness (see note in specprop description)
-* kurt: kurtosis (see note in specprop description)
-* sp.ent: spectral entropy
-* sfm: spectral flatness
-* mode: mode frequency
-* centroid: frequency centroid (see specprop)
-* peakf: peak frequency (frequency with highest energy)
-* meanfun: average of fundamental frequency measured across acoustic signal
-* minfun: minimum fundamental frequency measured across acoustic signal
-* maxfun: maximum fundamental frequency measured across acoustic signal
-* meandom: average of dominant frequency measured across acoustic signal
-* mindom: minimum of dominant frequency measured across acoustic signal
-* maxdom: maximum of dominant frequency measured across acoustic signal
-* dfrange: range of dominant frequency measured across acoustic signal
-* modindx: modulation index. Calculated as the accumulated absolute difference between adjacent measurements of fundamental frequencies divided by the frequency range
-* label: male or female
-
-# Research Questions
-
-An original analysis of the data-set can be found in the following article: 
-
-[Identifying the Gender of a Voice using Machine Learning](http://www.primaryobjects.com/2016/06/22/identifying-the-gender-of-a-voice-using-machine-learning/)
-
-The best model achieves 99% accuracy on the test set. According to a CART model, it appears that looking at the mean fundamental frequency might be enough to accurately classify a voice. However, some male voices use a higher frequency, even though their resonance differs from female voices, and may be incorrectly classified as female. To the human ear, there is apparently more than simple frequency, that determines a voice's gender.
-
-# Questions
-
-* What other features differ between male and female voices?
-* Can we find a difference in resonance between male and female voices?
-* Can we identify falsetto from regular voices? (separate data-set likely needed for this)
-* Are there other interesting features in the data?
-
-# References
-
-* [The Harvard-Haskins Database of Regularly-Timed Speech](http://www.nsi.edu/~ani/download.html)
-* [VoxForge Speech Corpus, Home](http://www.repository.voxforge1.org/downloads/SpeechCorpus/Trunk/Audio/Main/8kHz_16bit/)
-* [Festvox CMU_ARCTIC Speech Database at Carnegie Mellon University](http://festvox.org/cmu_arctic/)
+* **meanfreq**: mean frequency (in kHz)
+* **sd	      :** standard deviation of frequency
+* **median    :** median frequency (in kHz)
+* **Q25       :** first quantile (in kHz)
+* **Q75       :** third quantile (in kHz)
+* **IQR       :** interquantile range (in kHz)
+* **skew      :** skewness (see note in specprop description)
+* **kurt      :** kurtosis (see note in specprop description)
+* **sp.ent    :** spectral entropy
+* **sfm       :** spectral flatness
+* **mode      :** mode frequency
+* **centroid  :** frequency centroid (see specprop)
+* **peakf     :** peak frequency (frequency with highest energy)
+* **meanfun   :** average of fundamental frequency measured across acoustic signal
+* **minfun    :** minimum fundamental frequency measured across acoustic signal
+* **maxfun    :** maximum fundamental frequency measured across acoustic signal
+* **meandom   :** average of dominant frequency measured across acoustic signal
+* **mindom    :** minimum of dominant frequency measured across acoustic signal
+* **maxdom    :** maximum of dominant frequency measured across acoustic signal
+* **dfrange   :** range of dominant frequency measured across acoustic signal
+* **modindx   :** modulation index. Calculated as the accumulated absolute difference between adjacent measurements of fundamental frequencies divided by the frequency range
+* **label     :** male or female
