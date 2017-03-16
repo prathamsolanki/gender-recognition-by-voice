@@ -34,7 +34,7 @@ def runXGB(X, y):
 
     model.save_model('voice-gender.model')
 
-train_df = pd.read_csv('Data/voice.csv')
+train_df = pd.read_csv('../Data/voice.csv')
 
 X = train_df.ix[:, 0:20]
 y = train_df["label"]
