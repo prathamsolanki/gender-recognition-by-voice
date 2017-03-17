@@ -14,13 +14,13 @@ def runXGB(X, y):
     param['max_depth'] = 6                  #default: 6
     param['silent'] = 1
     param['gamma'] = 0                      #default: 0
-    param['eval_metric'] = "error"
+    param['eval_metric'] = "logloss"
     param['min_child_weight'] = 4           #default: 1
     param['max_delta_step'] = 4             #default: 0
     param['subsample'] = 0.7                  #default: 1
     param['colsample_bytree'] = 0.7           #default: 1
     param['seed'] = 0
-    num_rounds = 100
+    num_rounds = 2500
 
     plst = list(param.items())
 
@@ -30,7 +30,7 @@ def runXGB(X, y):
     xgcv = xgb.DMatrix(data_cv, label = labels_cv)
 
     evallist = [(xgcv,'eval')]
-    model = xgb.train(plst, xgtrain, num_rounds, evallist, early_stopping_rounds = 10)
+    model = xgb.train(plst, xgtrain, num_rounds, evallist, early_stopping_rounds = 100)
 
     model.save_model('voice-gender.model')
 
